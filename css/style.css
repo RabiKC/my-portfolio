@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: red;
+  background-color: var(--primary-color);
 }
 :root {
   --primary-color: #2c3531;
@@ -83,7 +83,7 @@ p {
   background-color: var(--primary-color);
   width: 100%;
   min-height: 100vh;
-  padding: 3rem 0 0;
+  padding: 4rem 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,7 +99,7 @@ p {
 
 .hero__wrapper .hero__left {
   /* flex-basis: 60%; */
-  padding: 1rem 3rem;
+  /* padding: 1rem 3rem; */
   color: var(--white-text);
   display: flex;
   justify-content: center;
@@ -138,7 +138,7 @@ p {
   z-index: 100;
   bottom: 3%;
   padding: 1.5rem;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   border-radius: 0 10px 10px 0;
 }
 
@@ -163,6 +163,19 @@ p {
 
 @media screen and (max-width: 768px) {
   .nav__links {
+    display: none;
+  }
+
+  .social__links {
+    flex-direction: row;
+    position: relative;
+  }
+
+  .hero__wrapper {
+    width: 90%;
+  }
+
+  .social__links::before {
     display: none;
   }
 }
