@@ -10,140 +10,68 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-
-      *,
-      *::before,
-      *::after {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: "Montserrat", sans-serif;
-      }
-
-      a {
-        text-decoration: none;
-      }
-
-      li {
-        list-style: none;
-      }
-
-      .home-page {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        width: 100%;
-        height: 100vh;
-        background: linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0.3),
-            rgba(0, 0, 0, 0.7)
-          ),
-          url("./../images/hero.jpg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
-
-      .profile-img {
-        width: 200px;
-        height: 200px;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        margin-top: auto;
-      }
-
-      .home-page img {
-        width: 135%;
-        height: 100%;
-      }
-
-      h1 {
-        font-size: 3rem;
-        font-weight: 600;
-        text-align: center;
-        height: fit-content;
-        color: rgb(247, 247, 247);
-        margin-bottom: 0.7rem;
-        font-size: clamp(2.4rem, 2.4vw, 3.2rem);
-      }
-
-      h2 {
-        color: rgb(247, 247, 247);
-        text-align: center;
-      }
-
-      .heading h2 {
-        font-size: 1.2rem;
-      }
-
-      .social-links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 2rem;
-      }
-
-      .social-links a {
-        color: rgb(247, 247, 247);
-        font-size: 1.5rem;
-        display: block;
-        width: 100%;
-        transition: transform 250ms ease-in-out;
-      }
-
-      .social-links a:hover {
-        transform: scale(1.3);
-      }
-      .connect {
-        margin-top: auto;
-        margin-bottom: auto;
-      }
-
-      .connect h2 {
-        margin-bottom: 1.2rem;
-      }
-    </style>
   </head>
   <body>
+    <header class="page__header">
+      <div class="header__wrapper">
+        <nav class="page__nav">
+          <div class="page__logo">
+            <!-- ROOSTER FONT -- FONTSPACE-->
+            <img src="./images/logo.png" alt="Rabi KC" />
+          </div>
+          <ul class="nav__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main class="home-page">
+      <section class="hero__section">
+        <div class="hero__wrapper">
+          <div class="hero__left">
+            <div class="hero__header">
+              <h1>Hello there!! I am Rabi K.C.</h1>
+              <h2>Front-end Web Developer/ UI/UX Designer</h2>
+            </div>
+            <p>
+              Hi. This is my personal website. I am a
+              front-end web developer and an aspiring full stack developer. I
+              also do some UI/UX designing. The website is in building process, so you are going to have to be a little bit patient. Bye. 😊😊
+            </p>
+          </div>
+          <!-- <div class="hero__right">
+            <div class="cartoon__img">
+              <img src="./images/hero-img.png" alt="Rabi KC" />
+            </div>
+          </div>
+        </div> -->
+      </section>
       <div class="profile-img">
-        <img src="./images/profile.jpg" alt="Rabi KC" />
+        <!-- <img src="./images/profile.jpg" alt="Rabi KC" /> -->
       </div>
-      <div class="heading">
-        <h1>Rabi K.C.</h1>
-        <h2>Front-end Web Developer/ React.js Developer/ UI/UX Designer</h2>
-      </div>
-      <div class="connect">
-        <h2>Connect With Me</h2>
-        <ul class="social-links">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/rabi-kc-132770219/"
-              target="_blank"
-              ><i class="bi bi-linkedin"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://github.com/RabiKC" target="_blank"
-              ><i class="bi bi-github"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/rabi.kc/" target="_blank"
-              ><i class="bi bi-instagram"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
+
+      <ul class="social__links">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/rabi-kc-132770219/"
+            target="_blank"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/RabiKC" target="_blank"
+            ><i class="bi bi-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/rabi.kc/" target="_blank"
+            ><i class="bi bi-instagram"></i
+          ></a>
+        </li>
+      </ul>
     </main>
   </body>
 </html>
